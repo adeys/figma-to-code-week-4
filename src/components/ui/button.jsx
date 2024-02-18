@@ -9,6 +9,7 @@ const Button = classed(
 			variant: {
 				solid: "bg-primary text-primary-foreground hover:bg-primary-hover hover:text-primary-hover-foreground active:bg-primary-active active:text-primary-active-foreground",
 				outline: "bg-white text-primary border-2 border-primary hover:bg-primary hover:text-primary-foreground active:bg-primary-hover active:text-primary-hover-foreground",
+				ghost: "bg-white text-primary hover:bg-zinc-100 focus:border focus:border-neutral active:border active:border-neutral active:bg-zinc-100 active:text-primary",
 			},
 			size: {
 				sm: "px-3 py-1.5 text-sm",
