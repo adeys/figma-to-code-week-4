@@ -25,25 +25,25 @@ export default function ProjectSection() {
 	return (
 		<section className="bg-primary text-primary-foreground py-16" id="projects">
 			<div class="container">
-				<h2 className="text-5xl mb-5 text-center py-5">My <strong>Projects</strong></h2>
+				<h2 className="text-3xl lg:text-5xl mb-5 text-center py-5">My <strong>Projects</strong></h2>
 
-				<div className="py-10 px-6 space-y-28">
+				<div className="lg:py-10 lg:px-6 lg:space-y-28">
 					{projects.map((project, index) => (
-						<article key={index} className="flex even:flex-row-reverse gap-16 justify-between items-center py-6">
+						<article key={index} className="flex flex-col lg:flex-row lg:even:flex-row-reverse gap-16 justify-between items-center py-6">
 							<div className="flex-1 rounded-lg overflow-hidden">
-								<img src={project.picture} alt={`${project.name} Picture`} className="h-[400px] w-full object-cover object-center hover:scale-110 cursor-pointer duration-500" />
+								<img src={project.picture} alt={`${project.name} Picture`} className="h-auto lg:h-[400px] w-full object-cover object-center hover:scale-110 cursor-pointer duration-500" />
 							</div>
 
-							<div className="flex-1 space-y-8">
-								<div className="text-5xl font-bold">{index < 9 ? `0${index + 1}` : index}</div>
-								<h3 className="text-4xl font-bold transition-colors hover:text-zinc-300">
+							<div className="flex-1 space-y-6 lg:space-y-8">
+								<div className="text-3xl lg:text-5xl font-bold">{index < 9 ? `0${index + 1}` : index}</div>
+								<h3 className="text-2xl lg:text-4xl font-bold transition-colors hover:text-zinc-300">
 									<a href="#">{project.name}</a>
 								</h3>
-								<p className="text-zinc-300">{project.description}</p>
+								<p className="text-zinc-400">{project.description}</p>
 
 								<a href="#" className="block text-primary-foreground hover:text-zinc-300 transition-colors">
 									<span className="sr-only">Open link</span>
-									<svg className="size-8" data-slot="icon" fill="currentColor" viewBox="0 0 20 20"
+									<svg className="size-6 lg:size-8" data-slot="icon" fill="currentColor" viewBox="0 0 20 20"
 									     xmlns="http://www.w3.org/2000/svg"
 									     aria-hidden="true">
 										<path clip-rule="evenodd" fill-rule="evenodd"

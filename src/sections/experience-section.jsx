@@ -36,23 +36,23 @@ export default function ExperienceSection() {
 	return (
 		<section className="bg-primary text-primary-foreground py-16" id="experience">
 			<div class="container">
-				<h2 className="text-5xl mb-5 text-center py-5">My <strong>Experience</strong></h2>
+				<h2 className="text-3xl lg:text-5xl mb-5 text-center py-5">My <strong>Experience</strong></h2>
 
-				<div className="py-10 px-6 space-y-8">
+				<div className="lg:py-10 lg:px-6 space-y-8">
 					{experiences.map((experience, index) => (
 						<div key={index} className="rounded-lg px-6 py-8 border cursor-pointer border-neutral hover:bg-neutral">
-							<div className="flex items-center justify-between">
-								<div className="flex items-start gap-6">
+							<div className="flex gap-4 items-center justify-between flex-wrap">
+								<div className="flex items-center lg:items-start gap-6">
 									<img src={experience.company.logo} alt={`${experience.company.name} Logo`} width={32} height={32}/>
-									<h3 className="text-3xl font-bold">{experience.title}</h3>
+									<h3 className="text-2xl lg:text-3xl font-semibold">{experience.title}</h3>
 								</div>
 
-								<p>
+								<p className="text-zinc-300 font-medium">
 									{experience.period}
 								</p>
 							</div>
 
-							<p className="mt-5 text-lg">{experience.description}</p>
+							<p className="mt-5 text-zinc-300 lg:text-lg">{experience.description}</p>
 						</div>
 					))}
 				</div>

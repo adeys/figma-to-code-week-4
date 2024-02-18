@@ -14,13 +14,13 @@ export default function Header() {
 		<header className="container flex items-center justify-between py-3 px-4 lg:px-4">
 			<Logo />
 
-			<nav className="flex gap-2 items-center">
+			<nav className="hidden lg:flex gap-2 items-center">
 				{links.map((link, index) => (
 					<a key={index} href={link.href} className="text-primary font-semibold px-2 py-3 transition-colors hover:text-primary-hover">{link.label}</a>
 				))}
 			</nav>
 
-			<Button>
+			<Button className="hidden lg:flex">
 				Resume
 				<ArrowDownTrayIcon className="size-5" />
 			</Button>

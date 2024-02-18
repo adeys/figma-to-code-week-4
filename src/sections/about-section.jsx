@@ -3,15 +3,15 @@ import aboutMePicture from '../assets/images/about-me-picture.png'
 export default function AboutSection() {
 	return (
 		<section className="container py-16" id="about-me">
-			<div class="flex flex-col lg:flex-row items-center lg:items-start gap-4 px-8">
+			<div class="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:px-8">
 				<div className="flex-1 flex items-center">
 					<img src={aboutMePicture} className="h-auto w-auto max-w-full" alt="About Me Illustration"/>
 				</div>
 
 				<div className="flex-1">
-					<h2 className="text-5xl mb-5 py-5">About <strong>Me</strong></h2>
+					<h2 className="text-3xl lg:text-5xl lg:mb-5 py-5">About <strong>Me</strong></h2>
 
-					<div className="space-y-6">
+					<div className="text-zinc-500 space-y-6">
 						<p>
 							I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
 						</p>

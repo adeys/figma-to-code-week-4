@@ -4,17 +4,17 @@ import { socialLinks } from "../components/social-icons.jsx";
 
 export default function HeroSection() {
 	return (
-		<section className="container py-16">
-			<div className="flex gap-2 md:flex-row-reverse lg:items-end">
+		<section className="container py-10 lg:py-16">
+			<div className="flex gap-12 flex-col md:flex-row-reverse lg:items-end">
 				<div className="flex-1">
 					<img src={heroPictureSrc} alt="A picture of me" className="rounded-lg w-full" />
 				</div>
 
 				<div className="flex-1">
-					<h1 className="text-4xl lg:text-6xl mb-5">Hello, I'm <strong>Evren Shah.</strong></h1>
-					<div className="text-4xl lg:text-6xl space-y-5">
+					<h1 className="text-3xl lg:text-6xl mb-3 lg:mb-5">Hello, I'm <strong>Evren Shah.</strong></h1>
+					<div className="text-3xl lg:text-6xl space-y-3 lg:space-y-5">
 						<p>
-							<span className="font-bold">Frontend</span> <span className="font-bold ">Developer</span> <br/>
+							<span className="font-bold">Frontend</span> <span className="font-bold">Developer</span> <br/>
 						</p>
 
 						<p>
@@ -28,7 +28,7 @@ export default function HeroSection() {
 						and scrambled it to specimen book.
 					</p>
 
-					<div className="mt-20 flex gap-8">
+					<div className="mt-8 lg:mt-20 flex gap-8">
 						{socialLinks.map(({ icon: SocialIcon, ...social }, index) => (
 							<Button key={index} size="icon" variant="outline" className="p-4">
 								<SocialIcon className="size-6" title={`${social.name} Icon`} />
