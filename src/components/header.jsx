@@ -15,7 +15,7 @@ export default function Header() {
 
 	return (
 		<nav className="container px-4 lg:px-4">
-			<div className="flex items-center justify-between py-3 md:py-0">
+			<div className="flex items-center justify-between py-3">
 				<Logo />
 
 				<ul className="hidden lg:flex gap-2 items-center">
