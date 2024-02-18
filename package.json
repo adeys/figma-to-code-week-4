@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/sora": "^5.0.16",
+    "@heroicons/react": "^2.1.1",
+    "@tw-classed/react": "^1.7.0",
+    "clsx": "^2.1.0",
     "preact": "^10.19.3"
   },
   "devDependencies": {
