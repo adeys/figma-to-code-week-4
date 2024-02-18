@@ -13,8 +13,21 @@ export default function HeroSection() {
 				<div className="flex-1">
 					<h1 className="text-3xl lg:text-6xl mb-3 lg:mb-5">Hello, I'm <strong>Evren Shah.</strong></h1>
 					<div className="text-3xl lg:text-6xl space-y-3 lg:space-y-5">
-						<p>
-							<span className="font-bold">Frontend</span> <span className="font-bold">Developer</span> <br/>
+						<p className="font-bold">
+							<span>Frontend</span>{' '}
+							<span className="sr-only">Developer</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="325px" height="75px" className="hidden lg:inline" aria-hidden={true}>
+								<text x={0} y={52} fontWeight={700} fontSize={54} className="fill-primary-foreground stroke-primary"
+								      style={{paintOrder: 'stroke', strokeWidth: 6}}>
+									Developer
+								</text>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="175px" height="38px" className="inline lg:hidden" aria-hidden={true}>
+								<text x={0} y={26} fontWeight={700} fontSize={26} className="fill-primary-foreground stroke-primary"
+								      style={{paintOrder: 'stroke', strokeWidth: 3}}>
+									Developer
+								</text>
+							</svg>
 						</p>
 
 						<p>

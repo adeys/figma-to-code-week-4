@@ -30,10 +30,29 @@ export default function ContactSection() {
 
 				<div class="grow space-y-8">
 					<h2 className="text-3xl lg:text-6xl font-bold">
-						Let’s talk for Something special
+						Let’s
+						<span className="sr-only">talk</span>
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="120px" height="75px" className="hidden lg:inline-block mx-2" aria-hidden={true}>
+							<text x={5} y={52} fontWeight={700} fontSize={54} className="fill-primary-foreground stroke-primary"
+							      style={{paintOrder: 'stroke', strokeWidth: 6}}>
+								talk
+							</text>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="62px" height="38px" className="inline-block mx-2 lg:hidden" aria-hidden={true}>
+							<text x={5} y={26} fontWeight={700} fontSize={28} className="fill-primary-foreground stroke-primary"
+							      style={{paintOrder: 'stroke', strokeWidth: 3}}>
+								talk
+							</text>
+						</svg>
+
+						<span>
+							for Something special
+						</span>
 					</h2>
 					<p className="text-neutral">
-						I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.
+						I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive
+						experiences.
 					</p>
 
 					<div className="text-2xl font-bold space-y-3">
